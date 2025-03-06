@@ -10,5 +10,5 @@ jobs:
     steps:  
     - name: check Xcode version 
       run: | 
-        /usr/bin/xcodebuild --version &&\
+        /usr/bin/xcodebuild -version &&\
         cat /etc/os-release
