@@ -1,0 +1,14 @@
+name: Go
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:  
+    - name: check Xcode version 
+      run: | 
+        /usr/bin/xcodebuild --version &&\
+        cat /etc/os-release
